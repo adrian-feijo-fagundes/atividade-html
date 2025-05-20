@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian</title>
+</head>
+<body style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(
+            to bottom, 
+            #0E1122 10%,
+            #2E0C38 30%,
+            #17506e 60%,
+            #60A4A1 100%
+        );
+    ">
+    <header style="
+        width: 720px;
+        background-color: white;
+        padding: 10px;
+        position: fixed;
+        top: 0;"
+    >
+        <nav>
+            <ul style="
+                list-style: none;
+                display: flex;
+                justify-content: space-around;"
+            >
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="
+        max-width: 720px;
+        background-color: #ffffff;
+        padding: 10px;
+        margin-top: 50px;
+        border-radius: 10px;"
+    >
+        <section id="introducao"
+            style="background-color: #c7c5c5;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;"
+            >
+            <h1 style="
+                font-size: 30px;
+                text-align: center;"
+            >Adrian Feijó Fagundes</h1>
+
+            <p>
+                Olá meu nome é Adrian, isso é meio obvio pois está no titulo principal da página mas ok.    
+            </p>
+            <p> 
+                Eu tenho 22 anos e comecei a gostar de <span style="color: red">programação</span> a pouco mais de 1 ano, estudo de forma moderada,
+                mas decidi trabalhar na area de desenvolvimento.
+            </p>
+
+        </section>
+        
+        
+        <section id="habilidades" 
+            style="background-color: #c7c5c5;
+                padding: 10px;
+                border-radius: 10px;">
+            <h2 style="
+                font-size: 30px;
+                text-align: center;
+            ">Habilidades</h2>
+        
+            <h3>Soft Skills</h3>
+            <ul>
+                <li><span style="color: red">Comunicação</span></li>
+                <li>Trabalho em Equipe</li>
+                <li>Empatia</li>
+                <li>Organização</li>
+                <li>Proatividade</li>
+                <li>Adaptabilidade</li>
+            </ul>
+            <h3>Hard Skills</h3>
+            <ul>
+                <li><span style="color: rgb(215, 19, 64)">Lógica de Programação</span></li>
+                <li>Programação Orientada a Objetos</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>Java</li>
+                <li>Java Swing</li>
+                <li>Java JDBC</li>
+            </ul>
+        </section>
+        
+        <hr>
+
+        <section id="projetos"
+            style="background-color: #c7c5c5;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;"    
+        >
+            <h2 style="
+                    font-size: 30px;
+                    text-align: center;
+                ">Projetos</h2>
+        
+            <h3>Timeless - Em desenvolvimento</h3>
+            <p>
+                Um aplicativo que ajuda as pessoas a gerenciar o tempo e priorizar tarefas entre 
+                outras atividades de forma eficaz, desenvolvido em <span>Javascript, HTML, CSS</span>
+                para o frontend e <span>Typescript, Express, MySQL</span> para o backend
+            </p>
+            <a href="https://github.com/Gukisz/timeless" target="_blank">Link para o repositório do Timeless</a>
+        
+            <h3>Terminal RPG</h3>
+            <p>
+                Um jogo simples para sair de uma masmorra desenvolvido em <span>JAVA</span>, usado para o 
+                estudo de <span>Programação Orientada a objetos</span>.
+            </p>
+            <a href="https://github.com/adrian-feijo-fagundes/jogo-java-terminal" target="_blank">Link para o repositório do Terminal RPG</a>
+        
+        </section>
+        
+        <section id="contato" 
+                style="background-color: #c7c5c5;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;"
+        >
+            <h2 style="
+                font-size: 30px;
+                text-align: center;"
+            >Contato</h2>
+       
+            <form action="" style="
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: space-around;
+            ">
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="" placeholder="Digite seu nome aqui"
+                    style="margin: 10px auto;
+                    width: 200px;"
+                    required >
+                
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="" placeholder="Digite seu email aqui"
+                    style="margin: 10px auto;
+                    width: 200px;" 
+                    required >
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id=""
+                    style="margin: 10px auto;
+                    width: 400px;
+                    height: 60px;"
+                    required>
+                    
+                </textarea>
+                
+                <label for="origem" required>Como me conheceu?</label>
+                <select name="origem" id=""
+                style="margin: 10px auto;
+                    width: 200px;
+                    ">
+                    <option value="linkedin">Linkedin</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <input type="submit" value="Enviar"
+                style="margin: 10px auto;
+                    width: 200px;
+                    ">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
