@@ -1,0 +1,40 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: aliceblue;
+}
+
+tbody {
+    background-color: aqua;
+}
+
+td {
+    padding: 20px;
+}
+th, td {
+    border: 1px black solid;
+}
+thead th {
+    height: 100px;
+}
+
+.container-img {
+    height: 280px;
+    width: 280px;
+}
+
+.player {
+    padding: 20px;
+}
+
+
+
+img {
+  width: 100%; /* A imagem ocupa todo o espaço do contêiner */
+  height: 100%; /* A imagem ocupa todo o espaço do contêiner */
+  object-fit: cover; /* Corta a imagem para preencher o contêiner */
+  object-position: 50% 50%; /* Centraliza a imagem dentro do contêiner */
+}
