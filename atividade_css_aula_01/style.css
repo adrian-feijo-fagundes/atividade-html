@@ -1,40 +1,71 @@
+:root {
+    --color-bg: #2b204c;          
+    --color-table: #1a1b2f;        
+    --primary-color: #2c2e4a;     
+    --hover-color: #3e2c59;        
+    --border-color: #6c4ab6;      
+    --text-color: #f8f8ff;        
+    --accent-color: #ff6ec7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px;
+}
+
 table {
+    width: 100%;
+    max-width: 1200px; 
     margin: auto;
     border-collapse: collapse;
+    background-color: var(--color-table);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px #00000066;
 }
 
 thead {
-    background-color: aliceblue;
+    background-color: var(--primary-color);
 }
 
-tbody {
-    background-color: aqua;
-}
-
-td {
-    padding: 20px;
-}
 th, td {
-    border: 1px black solid;
+    padding: 16px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
 }
-thead th {
+
+th {
+    font-weight: 600;
+}
+
+tbody td {
+    transition: padding 0.3s ease, 0.3s ease;
+}
+
+tbody tr:hover td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--hover-color);
+    color: var(--accent-color);
+}
+
+.container-img img {
+    width: 100px;
     height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.container-img {
-    height: 280px;
-    width: 280px;
+tbody tr:hover .container-img img {
+    transform: scale(1.1);
 }
 
-.player {
-    padding: 20px;
-}
-
-
-
-img {
-  width: 100%; /* A imagem ocupa todo o espaço do contêiner */
-  height: 100%; /* A imagem ocupa todo o espaço do contêiner */
-  object-fit: cover; /* Corta a imagem para preencher o contêiner */
-  object-position: 50% 50%; /* Centraliza a imagem dentro do contêiner */
+.player audio {
+    width: 100%;
 }
