@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Adrian Feijó Fagundes</title>
+</head>
+<body>
+  <header>
+      <nav>
+        <ul>
+          <li><a class="nav-link"  href="#sobre">Sobre Mim</a></li>
+          <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1 class="title">ADRIAN FEIJÓ FAGUNDES</h1>
+        <p>
+            <strong>Olá! Eu sou o Adrian, tenho 22 anos e moro em São Leopoldo, RS.</strong>
+        </p>
+        <p>
+            Atualmente trabalho em uma loja de brinquedos e estou cursando Técnico em Desenvolvimento de Sistemas. Meu foco principal é <strong>programação</strong>, especialmente no desenvolvimento web.
+        </p>
+    </section>
+
+    <section>
+      <h2 class="title">Habilidades</h2>
+      <div class="skills-container">
+        <div class="skills">
+          <h3 class="title">Linguagens e Tecnologias</h3>
+          <ul class="skills-list">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>SQL</li>
+            <li>Git</li>
+            <li>HTML e CSS</li>
+            <li>Java Swing</li>
+            <li>Java JDBC</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3 class="title">Soft Skills</h3>
+          <ul class="skills-list">
+            <li>Comunicação</li>
+            <li>Trabalho em Equipe</li>
+            <li>Empatia</li>
+            <li>Organização</li>
+            <li>Proatividade</li>
+            <li>Adaptabilidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title" >Projetos</h2>
+      <div>
+        <h3>Timeless - Em desenvolvimento</h3>
+        <p>Um aplicativo que ajuda as pessoas a gerenciar o tempo e priorizar tarefas de forma eficaz. Desenvolvido com <strong>JavaScript, HTML, CSS</strong> no front-end e <strong>TypeScript, Express, MySQL</strong> no back-end.</p>
+        <a href="https://github.com/Gukisz/timeless" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <div>
+        <h3>Jogo Java Terminal</h3>
+        <p>Desenvolvido com Java e conceitos de orientação a objetos, esse jogo roda no terminal e ajudou a consolidar meu entendimento de OOP.</p>
+        <a href="https://github.com/adrian-feijo-fagundes/jogo-java-terminal" target="_blank">Ver no GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+
+        <label for="origem">Como me conheceu?</label>
+        <select id="origem" name="origem" required>
+          <option value="linkedin">LinkedIn</option>
+          <option value="instagram">Instagram</option>
+          <option value="youtube">YouTube</option>
+          <option value="outros">Outros</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 feito por Adrian Feijó Fagundes</p>
+  </footer>
+</body>
+</html>

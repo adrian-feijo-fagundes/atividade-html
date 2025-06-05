@@ -1,0 +1,100 @@
+:root {
+    --color-bg: #1a1b2f;          
+    --text-color: #f4f4f4;
+    --primary-color: #2c2e4a;    
+    --border-color: #6c4ab6;     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--text-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-color);
+}
+nav {
+    max-width: 1000px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.title {
+    padding: 12px 0px;
+    margin-bottom: 10px;
+    text-indent: 0px;
+}
+.skills-container {
+    display: flex;
+}
+.skills {
+    width: 100%;
+    padding: 0px 10px;
+}
+.skills-list {
+    padding: 0px 0px 10px 40px;
+}
+.skills-list li {
+    margin: 5px
+}
+.skills h3 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    text-align: justify;
+    margin: 5px;
+}
+h1 {
+    font-size: 30px;   
+}

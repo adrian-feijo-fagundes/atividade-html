@@ -44,7 +44,7 @@ th {
 }
 
 tbody td {
-    transition: padding 0.3s ease, 0.3s ease;
+    transition: padding 0.3s ease;
 }
 
 tbody tr:hover td {
