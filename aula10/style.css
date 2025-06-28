@@ -1,0 +1,23 @@
+:root {
+    --bg-color: white;
+    --text: black;
+}
+
+.dark-mode {
+    --bg-color: rgb(0, 0, 0);
+    --text: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text);
+}
+
+
+
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+}
