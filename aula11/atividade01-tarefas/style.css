@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    margin: 5px;
+    font-size: 20px;
+}
+
+strong {
+    color: red;
+}
