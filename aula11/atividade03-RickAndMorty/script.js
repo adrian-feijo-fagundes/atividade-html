@@ -5,7 +5,7 @@ document.getElementById('formSearch').addEventListener('submit', e => {
     const character = document.getElementById('character').value
     resultSection.innerHTML = ""
 
-    const url = character == "" ? 
+    const url = character !== "" ? 
         `https://rickandmortyapi.com/api/character/?name=${character}`
         : `https://rickandmortyapi.com/api/character/`
 
