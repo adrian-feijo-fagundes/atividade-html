@@ -1,0 +1,24 @@
+div#character-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.result-card {
+    padding: 10px;
+    margin: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.status {
+    color: red;
+    font-size: 22px;
+}

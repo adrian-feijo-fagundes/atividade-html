@@ -1,21 +1,30 @@
 document.getElementById('formSearch').addEventListener('submit', e => {
     e.preventDefault()
+    const resultSection = document.getElementById('character-list')
 
     const character = document.getElementById('character').value
-    fetch(`https://rickandmortyapi.com/api/character/?name=${character}`)
+    resultSection.innerHTML = ""
+
+    const url = character == "" ? 
+        `https://rickandmortyapi.com/api/character/?name=${character}`
+        : `https://rickandmortyapi.com/api/character/`
+
+    fetch(url)
         .then(res => res.json())
         .then(data => {
-            const ul = document.getElementById('character-list')
             
-            if (data.Response === 'True') {
-                data.forEach(character => {
-                    const li = document.createElement('li')
+            data.results.forEach(character => {
+                const div = document.createElement('div')
 
-                    li.innerHTML = 
-                    
+                div.innerHTML = `
+                    <h3>${character.name}</h3>
+                    <img src="${character.image}" alt="${character.name}">
+                    <p class="status">${character.status}</p>
+                `
 
-                    ul.appendChild(li)
+                div.classList.add('result-card')
+                resultSection.appendChild(div)
                 });
-            }
+            
         })
 })
